@@ -3,11 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Industrial Career Workshop 2026</title>
-  <meta name="description" content="Industrial Career Workshop 2026 — Step Into Your Future Career in a Smart and Efficient Industry">
+
+  <meta
+    name="description"
+    content="Industrial Career Workshop 2026 — Step Into Your Future Career in a Smart and Efficient Industry"
+  >
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
 
   <style>
     :root {
@@ -18,15 +28,23 @@
       --blue-600: #168bd0;
       --blue-500: #39b9e8;
       --cyan: #8fe8ff;
+
       --white: #f8fcff;
       --muted: #a9bfd1;
+
       --glass: rgba(255,255,255,.075);
       --border: rgba(255,255,255,.13);
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       font-family: "Inter", sans-serif;
@@ -41,25 +59,60 @@
       position: fixed;
       inset: 0;
       z-index: -5;
+
       background:
-        radial-gradient(circle at 10% 15%, rgba(57,185,232,.18), transparent 28%),
-        radial-gradient(circle at 90% 40%, rgba(22,139,208,.15), transparent 30%),
-        linear-gradient(135deg, #061526 0%, #092b4a 48%, #061526 100%);
+        radial-gradient(
+          circle at 10% 15%,
+          rgba(57,185,232,.18),
+          transparent 28%
+        ),
+        radial-gradient(
+          circle at 90% 40%,
+          rgba(22,139,208,.15),
+          transparent 30%
+        ),
+        linear-gradient(
+          135deg,
+          #061526 0%,
+          #092b4a 48%,
+          #061526 100%
+        );
     }
 
-    a { color: inherit; text-decoration: none; }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-    /* ---------- BACKGROUND ---------- */
+    /* =========================================================
+       BACKGROUND
+    ========================================================= */
+
     .grid-bg {
       position: fixed;
       inset: 0;
       z-index: -4;
       opacity: .18;
+
       background-image:
-        linear-gradient(rgba(143,232,255,.12) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(143,232,255,.12) 1px, transparent 1px);
+        linear-gradient(
+          rgba(143,232,255,.12) 1px,
+          transparent 1px
+        ),
+        linear-gradient(
+          90deg,
+          rgba(143,232,255,.12) 1px,
+          transparent 1px
+        );
+
       background-size: 55px 55px;
-      mask-image: linear-gradient(to bottom, black, transparent 90%);
+
+      mask-image:
+        linear-gradient(
+          to bottom,
+          black,
+          transparent 90%
+        );
     }
 
     .orb {
@@ -69,40 +122,83 @@
       pointer-events: none;
       z-index: -3;
       opacity: .32;
-      animation: drift 12s ease-in-out infinite alternate;
+
+      animation:
+        drift 12s ease-in-out infinite alternate;
     }
 
-    .orb.one { width: 240px; height: 240px; background: #0b8fd1; top: 10%; left: -80px; }
-    .orb.two { width: 320px; height: 320px; background: #3ac9ee; right: -130px; top: 42%; animation-delay: -4s; }
-    .orb.three { width: 180px; height: 180px; background: #0b5fa5; left: 35%; bottom: 5%; animation-delay: -7s; }
+    .orb.one {
+      width: 240px;
+      height: 240px;
+      background: #0b8fd1;
+      top: 10%;
+      left: -80px;
+    }
+
+    .orb.two {
+      width: 320px;
+      height: 320px;
+      background: #3ac9ee;
+      right: -130px;
+      top: 42%;
+      animation-delay: -4s;
+    }
+
+    .orb.three {
+      width: 180px;
+      height: 180px;
+      background: #0b5fa5;
+      left: 35%;
+      bottom: 5%;
+      animation-delay: -7s;
+    }
 
     @keyframes drift {
-      to { transform: translate(35px, -25px) scale(1.12); }
+      to {
+        transform:
+          translate(35px, -25px)
+          scale(1.12);
+      }
     }
 
-    /* ---------- NAV ---------- */
+    /* =========================================================
+       NAVIGATION
+    ========================================================= */
+
     .nav {
       position: fixed;
       z-index: 50;
+
       top: 18px;
       left: 50%;
+
       transform: translateX(-50%);
+
       width: min(1120px, calc(100% - 30px));
+
       padding: 10px 14px;
+
       border: 1px solid var(--border);
-      background: rgba(5, 20, 36, .65);
+
+      background: rgba(5,20,36,.65);
+
       backdrop-filter: blur(18px);
+
       border-radius: 18px;
+
       display: flex;
       align-items: center;
       justify-content: space-between;
-      box-shadow: 0 12px 40px rgba(0,0,0,.22);
+
+      box-shadow:
+        0 12px 40px rgba(0,0,0,.22);
     }
 
     .brand {
       display: flex;
       align-items: center;
       gap: 10px;
+
       font-weight: 800;
       letter-spacing: -.04em;
     }
@@ -121,21 +217,37 @@
 
     .nav-links a {
       color: #d9edf8;
+
       padding: 9px 12px;
+
       border-radius: 11px;
+
       font-size: .82rem;
+
       transition: .25s ease;
     }
 
-    .nav-links a:hover { background: rgba(57,185,232,.13); color: white; }
+    .nav-links a:hover {
+      background: rgba(57,185,232,.13);
+      color: white;
+    }
 
     .nav-cta {
-      background: linear-gradient(135deg, var(--blue-600), var(--blue-500));
+      background:
+        linear-gradient(
+          135deg,
+          var(--blue-600),
+          var(--blue-500)
+        );
+
       color: #041522 !important;
       font-weight: 800;
     }
 
-    /* ---------- GENERAL ---------- */
+    /* =========================================================
+       GENERAL
+    ========================================================= */
+
     section {
       width: min(1120px, calc(100% - 34px));
       margin: auto;
@@ -146,848 +258,1812 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
+
       border: 1px solid rgba(143,232,255,.22);
+
       background: rgba(57,185,232,.08);
+
       padding: 7px 12px;
+
       border-radius: 999px;
+
       color: var(--cyan);
+
       font-size: .76rem;
       font-weight: 800;
+
       letter-spacing: .08em;
       text-transform: uppercase;
     }
 
     .eyebrow::before {
       content: "";
+
       width: 7px;
       height: 7px;
+
       border-radius: 50%;
+
       background: var(--cyan);
-      box-shadow: 0 0 15px var(--cyan);
+
+      box-shadow:
+        0 0 15px var(--cyan);
     }
 
     h2 {
       font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(2rem, 5vw, 3.8rem);
+
+      font-size:
+        clamp(
+          2rem,
+          5vw,
+          3.8rem
+        );
+
       line-height: 1.05;
+
       letter-spacing: -.055em;
-      margin: 18px 0 18px;
+
+      margin: 18px 0;
     }
 
     .section-intro {
       max-width: 760px;
+
       color: var(--muted);
+
       font-size: 1rem;
     }
 
-    /* ---------- HERO ---------- */
+    /* =========================================================
+       HERO
+    ========================================================= */
+
     .hero {
       min-height: 100vh;
-      width: min(1120px, calc(100% - 34px));
+
+      width:
+        min(
+          1120px,
+          calc(100% - 34px)
+        );
+
       margin: auto;
+
       display: grid;
+
       align-items: center;
-      grid-template-columns: 1.08fr .92fr;
+
+      grid-template-columns:
+        1.08fr .92fr;
+
       gap: 50px;
+
       padding-top: 110px;
+
       position: relative;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
     }
 
     .hero h1 {
       font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(3.4rem, 8vw, 7.6rem);
+
+      font-size:
+        clamp(
+          3.4rem,
+          8vw,
+          7.6rem
+        );
+
       line-height: .88;
+
       letter-spacing: -.075em;
+
       max-width: 780px;
+
       margin: 18px 0 28px;
     }
 
     .hero h1 span {
       color: var(--cyan);
+
       display: block;
-      text-shadow: 0 0 45px rgba(143,232,255,.22);
+
+      text-shadow:
+        0 0 45px
+        rgba(143,232,255,.22);
     }
 
     .hero-sub {
       color: #b8cedc;
+
       max-width: 680px;
-      font-size: clamp(1rem, 2vw, 1.18rem);
+
+      font-size:
+        clamp(
+          1rem,
+          2vw,
+          1.18rem
+        );
     }
 
     .hero-actions {
       display: flex;
+
       gap: 12px;
+
       flex-wrap: wrap;
+
       margin-top: 30px;
     }
 
     .btn {
       display: inline-flex;
+
       align-items: center;
       justify-content: center;
+
       padding: 14px 20px;
+
       border-radius: 13px;
+
       font-weight: 800;
+
       font-size: .9rem;
-      transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+
+      transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        background .25s ease;
+
       border: 1px solid transparent;
     }
 
     .btn-primary {
-      background: linear-gradient(135deg, #8fe8ff, #36b9e8);
+      background:
+        linear-gradient(
+          135deg,
+          #8fe8ff,
+          #36b9e8
+        );
+
       color: #061526;
-      box-shadow: 0 10px 35px rgba(57,185,232,.22);
+
+      box-shadow:
+        0 10px 35px
+        rgba(57,185,232,.22);
     }
 
     .btn-secondary {
-      background: rgba(255,255,255,.055);
+      background:
+        rgba(255,255,255,.055);
+
       border-color: var(--border);
+
       color: white;
     }
 
     .btn:hover {
       transform: translateY(-3px);
-      box-shadow: 0 15px 40px rgba(0,0,0,.2);
+
+      box-shadow:
+        0 15px 40px
+        rgba(0,0,0,.2);
     }
 
-    .hero-card {
+    /* ---------- HERO LOGO TANPA CARD ---------- */
+
+    .hero-logo {
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
       position: relative;
-      min-height: 480px;
-      display: grid;
-      place-items: center;
+
+      min-height: 500px;
+
+      z-index: 1;
     }
 
-    .hero-card::before {
+    .hero-logo::before {
       content: "";
+
       position: absolute;
-      width: 350px;
-      height: 350px;
-      border: 1px solid rgba(143,232,255,.18);
+
+      width: 380px;
+      height: 380px;
+
       border-radius: 50%;
-      animation: spin 22s linear infinite;
+
+      background:
+        radial-gradient(
+          circle,
+          rgba(57,185,232,.16),
+          transparent 68%
+        );
+
+      filter: blur(5px);
+
+      pointer-events: none;
     }
 
-    .hero-card::after {
-      content: "";
-      position: absolute;
-      width: 440px;
-      height: 440px;
-      border: 1px dashed rgba(143,232,255,.13);
-      border-radius: 50%;
-      animation: spin 30s linear infinite reverse;
-    }
-
-    @keyframes spin { to { transform: rotate(360deg); } }
-
-    .logo-card {
-      width: min(390px, 75vw);
-      aspect-ratio: 1;
-      border-radius: 42px;
-      display: grid;
-      place-items: center;
-      background: linear-gradient(145deg, rgba(255,255,255,.14), rgba(255,255,255,.035));
-      border: 1px solid rgba(255,255,255,.16);
-      box-shadow: inset 0 1px rgba(255,255,255,.12), 0 35px 90px rgba(0,0,0,.35);
-      backdrop-filter: blur(15px);
-      transform: rotate(2deg);
-      animation: float 5s ease-in-out infinite;
+    .hero-logo img {
       position: relative;
-      z-index: 2;
-    }
 
-    .logo-card img {
-      width: 78%;
-      height: 78%;
+      width:
+        min(
+          430px,
+          85%
+        );
+
+      height: auto;
+
       object-fit: contain;
-      filter: drop-shadow(0 20px 30px rgba(0,0,0,.35));
+
+      filter:
+        drop-shadow(
+          0 25px 45px
+          rgba(0,0,0,.35)
+        )
+        drop-shadow(
+          0 0 35px
+          rgba(143,232,255,.12)
+        );
+
+      animation:
+        logoFloat 5s ease-in-out infinite;
     }
 
-    @keyframes float {
-      0%,100% { transform: translateY(0) rotate(2deg); }
-      50% { transform: translateY(-15px) rotate(-1deg); }
+    @keyframes logoFloat {
+      0%, 100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-14px);
+      }
     }
 
     .scroll-note {
       position: absolute;
+
       bottom: 25px;
+
       left: 50%;
+
       transform: translateX(-50%);
+
       color: #7794a9;
+
       font-size: .72rem;
+
       letter-spacing: .16em;
+
       text-transform: uppercase;
+
       display: flex;
+
       flex-direction: column;
+
       align-items: center;
+
       gap: 7px;
     }
 
     .scroll-line {
       width: 1px;
+
       height: 45px;
-      background: linear-gradient(var(--cyan), transparent);
-      animation: scrollPulse 1.6s infinite;
+
+      background:
+        linear-gradient(
+          var(--cyan),
+          transparent
+        );
+
+      animation:
+        scrollPulse 1.6s infinite;
     }
 
     @keyframes scrollPulse {
-      50% { transform: translateY(8px); opacity: .35; }
+      50% {
+        transform: translateY(8px);
+        opacity: .35;
+      }
     }
 
-    /* ---------- INFO STRIP ---------- */
+    /* =========================================================
+       EVENT INFO
+    ========================================================= */
+
     .info-strip {
-      width: min(1120px, calc(100% - 34px));
+      width:
+        min(
+          1120px,
+          calc(100% - 34px)
+        );
+
       margin: 0 auto;
+
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      border: 1px solid var(--border);
-      background: rgba(255,255,255,.045);
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      border:
+        1px solid var(--border);
+
+      background:
+        rgba(255,255,255,.045);
+
       border-radius: 22px;
+
       overflow: hidden;
     }
 
     .info-item {
       padding: 24px;
-      border-right: 1px solid var(--border);
+
+      border-right:
+        1px solid var(--border);
     }
 
-    .info-item:last-child { border-right: 0; }
+    .info-item:last-child {
+      border-right: 0;
+    }
 
     .info-label {
       color: #7896ab;
+
       font-size: .7rem;
+
       text-transform: uppercase;
+
       letter-spacing: .12em;
+
       font-weight: 800;
     }
 
     .info-value {
       margin-top: 5px;
+
       font-weight: 800;
+
       font-size: 1rem;
     }
 
-    /* ---------- CARDS ---------- */
+    /* =========================================================
+       CARDS
+    ========================================================= */
+
     .glass-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
       gap: 16px;
+
       margin-top: 38px;
     }
 
     .glass-card {
-      border: 1px solid var(--border);
-      background: var(--glass);
+      border:
+        1px solid var(--border);
+
+      background:
+        var(--glass);
+
       padding: 27px;
+
       border-radius: 22px;
+
       backdrop-filter: blur(12px);
+
       transition: .35s ease;
+
       position: relative;
+
       overflow: hidden;
     }
 
     .glass-card::before {
       content: "";
+
       position: absolute;
+
       width: 130px;
       height: 130px;
+
       border-radius: 50%;
-      background: rgba(57,185,232,.10);
+
+      background:
+        rgba(57,185,232,.10);
+
       filter: blur(30px);
+
       top: -70px;
       right: -50px;
     }
 
     .glass-card:hover {
       transform: translateY(-8px);
-      border-color: rgba(143,232,255,.32);
-      background: rgba(255,255,255,.08);
+
+      border-color:
+        rgba(143,232,255,.32);
+
+      background:
+        rgba(255,255,255,.08);
     }
 
     .card-icon {
       width: 47px;
       height: 47px;
+
       border-radius: 14px;
+
       display: grid;
       place-items: center;
+
       font-size: 1.25rem;
-      background: rgba(57,185,232,.13);
-      border: 1px solid rgba(143,232,255,.18);
+
+      background:
+        rgba(57,185,232,.13);
+
+      border:
+        1px solid
+        rgba(143,232,255,.18);
+
       margin-bottom: 22px;
     }
 
     .glass-card h3 {
-      font-family: "Space Grotesk", sans-serif;
+      font-family:
+        "Space Grotesk",
+        sans-serif;
+
       margin-bottom: 9px;
+
       font-size: 1.22rem;
     }
 
-    .glass-card p { color: var(--muted); font-size: .91rem; }
+    .glass-card p {
+      color: var(--muted);
 
-    /* ---------- ABOUT ---------- */
+      font-size: .91rem;
+    }
+
+    /* =========================================================
+       ABOUT
+    ========================================================= */
+
     .about-layout {
       display: grid;
-      grid-template-columns: .72fr 1.28fr;
+
+      grid-template-columns:
+        .72fr 1.28fr;
+
       gap: 50px;
+
       align-items: start;
     }
 
     .about-copy p {
       color: #bfd0dc;
+
       margin-bottom: 18px;
+
       font-size: .97rem;
+
       text-align: justify;
     }
 
     .quote {
       margin-top: 25px;
+
       padding: 20px 22px;
-      border-left: 3px solid var(--cyan);
-      background: rgba(57,185,232,.06);
-      border-radius: 0 15px 15px 0;
+
+      border-left:
+        3px solid var(--cyan);
+
+      background:
+        rgba(57,185,232,.06);
+
+      border-radius:
+        0 15px 15px 0;
+
       color: #d9f7ff;
+
       font-weight: 700;
-      font-family: "Space Grotesk", sans-serif;
+
+      font-family:
+        "Space Grotesk",
+        sans-serif;
     }
 
-    /* ---------- TIMELINE ---------- */
+    /* =========================================================
+       TIMELINE
+    ========================================================= */
+
     .timeline {
       margin-top: 42px;
+
       position: relative;
     }
 
     .timeline::before {
       content: "";
+
       position: absolute;
+
       left: 15px;
+
       top: 8px;
       bottom: 8px;
+
       width: 1px;
-      background: linear-gradient(var(--cyan), rgba(143,232,255,.05));
+
+      background:
+        linear-gradient(
+          var(--cyan),
+          rgba(143,232,255,.05)
+        );
     }
 
     .timeline-item {
       position: relative;
+
       padding-left: 55px;
+
       margin-bottom: 35px;
     }
 
     .timeline-dot {
       position: absolute;
+
       left: 8px;
       top: 7px;
+
       width: 15px;
       height: 15px;
+
       border-radius: 50%;
-      background: var(--cyan);
-      box-shadow: 0 0 0 6px rgba(143,232,255,.08), 0 0 25px rgba(143,232,255,.5);
+
+      background:
+        var(--cyan);
+
+      box-shadow:
+        0 0 0 6px
+        rgba(143,232,255,.08),
+
+        0 0 25px
+        rgba(143,232,255,.5);
     }
 
     .timeline-item small {
       color: var(--cyan);
+
       font-weight: 800;
+
       letter-spacing: .08em;
+
       text-transform: uppercase;
     }
 
     .timeline-item h3 {
-      font-family: "Space Grotesk", sans-serif;
+      font-family:
+        "Space Grotesk",
+        sans-serif;
+
       margin: 4px 0 5px;
+
       font-size: 1.3rem;
     }
 
-    .timeline-item p { color: var(--muted); }
+    .timeline-item p {
+      color: var(--muted);
+    }
 
-    /* ---------- CTA / POSTER ---------- */
+    /* =========================================================
+       CTA / POSTER
+    ========================================================= */
+
     .poster-section {
       text-align: center;
     }
 
     .poster-box {
       margin-top: 42px;
+
       padding: 25px;
-      border: 1px solid rgba(143,232,255,.22);
-      background: linear-gradient(145deg, rgba(57,185,232,.09), rgba(255,255,255,.035));
+
+      border:
+        1px solid
+        rgba(143,232,255,.22);
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(57,185,232,.09),
+          rgba(255,255,255,.035)
+        );
+
       border-radius: 30px;
+
       display: grid;
-      grid-template-columns: .85fr 1.15fr;
+
+      grid-template-columns:
+        .85fr 1.15fr;
+
       gap: 35px;
+
       align-items: center;
+
       text-align: left;
     }
 
     .poster-placeholder {
       min-height: 480px;
-      border: 1px dashed rgba(143,232,255,.35);
+
+      border:
+        1px dashed
+        rgba(143,232,255,.35);
+
       border-radius: 22px;
+
       display: grid;
+
       place-items: center;
+
       text-align: center;
+
       padding: 30px;
+
       background:
-        linear-gradient(135deg, rgba(57,185,232,.08), transparent),
+        linear-gradient(
+          135deg,
+          rgba(57,185,232,.08),
+          transparent
+        ),
         rgba(0,0,0,.12);
+
       color: #7f9caf;
     }
 
     .poster-placeholder strong {
       display: block;
+
       color: var(--cyan);
-      font-family: "Space Grotesk", sans-serif;
+
+      font-family:
+        "Space Grotesk",
+        sans-serif;
+
       font-size: 1.1rem;
+
       margin-bottom: 6px;
     }
 
     .poster-placeholder img {
       width: 100%;
       height: 100%;
+
       max-height: 600px;
+
       object-fit: contain;
+
       border-radius: 15px;
+
       display: none;
     }
 
     .poster-copy h3 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-family:
+        "Space Grotesk",
+        sans-serif;
+
+      font-size:
+        clamp(
+          1.8rem,
+          4vw,
+          3rem
+        );
+
       line-height: 1.05;
+
       letter-spacing: -.05em;
+
       margin: 12px 0 16px;
     }
 
-    .poster-copy p { color: var(--muted); }
+    .poster-copy p {
+      color: var(--muted);
+    }
 
     .event-points {
       display: grid;
+
       gap: 10px;
+
       margin: 23px 0;
     }
 
     .event-point {
       display: flex;
+
       gap: 11px;
+
       color: #d6e7f0;
+
       font-size: .9rem;
     }
 
     .event-point span {
       color: var(--cyan);
+
       font-weight: 900;
     }
 
     .registration-link {
       display: block;
+
       width: 100%;
+
       text-align: center;
+
       margin-top: 18px;
+
       padding: 16px 20px;
+
       border-radius: 14px;
-      background: linear-gradient(135deg, var(--cyan), #39b9e8);
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--cyan),
+          #39b9e8
+        );
+
       color: #061526;
+
       font-weight: 900;
-      box-shadow: 0 15px 35px rgba(57,185,232,.18);
+
+      box-shadow:
+        0 15px 35px
+        rgba(57,185,232,.18);
+
       transition: .25s ease;
     }
 
-    .registration-link:hover { transform: translateY(-3px); }
+    .registration-link:hover {
+      transform: translateY(-3px);
+    }
 
-    /* ---------- FOOTER ---------- */
+    /* =========================================================
+       FOOTER
+    ========================================================= */
+
     footer {
-      width: min(1120px, calc(100% - 34px));
+      width:
+        min(
+          1120px,
+          calc(100% - 34px)
+        );
+
       margin: auto;
+
       padding: 55px 0 35px;
-      border-top: 1px solid var(--border);
+
+      border-top:
+        1px solid var(--border);
+
       display: flex;
+
       justify-content: space-between;
+
       gap: 30px;
+
       color: #6f899b;
+
       font-size: .8rem;
     }
 
     .footer-brand {
       display: flex;
+
       align-items: center;
+
       gap: 10px;
+
       color: #cfe1eb;
+
       font-weight: 800;
     }
 
-    .footer-brand img { width: 40px; height: 40px; object-fit: contain; }
+    .footer-brand img {
+      width: 40px;
+      height: 40px;
 
-    /* ---------- REVEAL ---------- */
+      object-fit: contain;
+    }
+
+    /* =========================================================
+       REVEAL
+    ========================================================= */
+
     .reveal {
       opacity: 0;
-      transform: translateY(35px);
-      transition: opacity .8s ease, transform .8s ease;
+
+      transform:
+        translateY(35px);
+
+      transition:
+        opacity .8s ease,
+        transform .8s ease;
     }
 
     .reveal.visible {
       opacity: 1;
-      transform: translateY(0);
+
+      transform:
+        translateY(0);
     }
 
-    /* ---------- RESPONSIVE ---------- */
+    /* =========================================================
+       RESPONSIVE
+    ========================================================= */
+
     @media (max-width: 850px) {
-      .nav-links a:not(.nav-cta) { display: none; }
-      .hero { grid-template-columns: 1fr; text-align: center; padding-top: 145px; }
-      .hero-sub { margin: auto; }
-      .hero-actions { justify-content: center; }
-      .hero-card { min-height: 400px; margin-top: -20px; }
-      .info-strip { grid-template-columns: 1fr; }
-      .info-item { border-right: 0; border-bottom: 1px solid var(--border); }
-      .info-item:last-child { border-bottom: 0; }
-      .about-layout { grid-template-columns: 1fr; }
-      .glass-grid { grid-template-columns: 1fr; }
-      .poster-box { grid-template-columns: 1fr; }
-      .poster-placeholder { min-height: 400px; }
-      footer { flex-direction: column; }
+
+      .nav-links a:not(.nav-cta) {
+        display: none;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        padding-top: 145px;
+      }
+
+      .hero-sub {
+        margin: auto;
+      }
+
+      .hero-actions {
+        justify-content: center;
+      }
+
+      .hero-logo {
+        min-height: 400px;
+
+        margin-top: -20px;
+      }
+
+      .hero-logo img {
+        width: min(360px, 75vw);
+      }
+
+      .hero-logo::before {
+        width: 300px;
+        height: 300px;
+      }
+
+      .info-strip {
+        grid-template-columns: 1fr;
+      }
+
+      .info-item {
+        border-right: 0;
+
+        border-bottom:
+          1px solid var(--border);
+      }
+
+      .info-item:last-child {
+        border-bottom: 0;
+      }
+
+      .about-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .glass-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .poster-box {
+        grid-template-columns: 1fr;
+      }
+
+      .poster-placeholder {
+        min-height: 400px;
+      }
+
+      footer {
+        flex-direction: column;
+      }
     }
 
     @media (max-width: 520px) {
-      section { padding: 75px 0; }
-      .hero h1 { font-size: 3.4rem; }
-      .hero-card::before { width: 270px; height: 270px; }
-      .hero-card::after { width: 330px; height: 330px; }
-      .logo-card { width: 270px; border-radius: 30px; }
-      .poster-placeholder { min-height: 330px; }
+
+      section {
+        padding: 75px 0;
+      }
+
+      .hero h1 {
+        font-size: 3.4rem;
+      }
+
+      .hero-logo {
+        min-height: 330px;
+      }
+
+      .hero-logo img {
+        width: 280px;
+      }
+
+      .hero-logo::before {
+        width: 250px;
+        height: 250px;
+      }
+
+      .poster-placeholder {
+        min-height: 330px;
+      }
     }
   </style>
 </head>
 
 <body>
+
+  <!-- =========================================================
+       BACKGROUND
+  ========================================================= -->
+
   <div class="grid-bg"></div>
+
   <div class="orb one"></div>
   <div class="orb two"></div>
   <div class="orb three"></div>
 
-  <!-- NAVIGATION -->
+
+  <!-- =========================================================
+       NAVIGATION
+  ========================================================= -->
+
   <nav class="nav">
+
     <a href="#home" class="brand">
-       <img src="logo.png">
-     <span>ICW 2026</span>
+
+      <img
+        src="logo.png"
+        alt="Logo ICW 2026"
+      >
+
+      <span>ICW 2026</span>
+
     </a>
 
     <div class="nav-links">
-      <a href="#about">Tentang</a>
-      <a href="#focus">Fokus</a>
-      <a href="#agenda">Rangkaian</a>
-      <a href="#register" class="nav-cta">Daftar Sekarang</a>
+
+      <a href="#about">
+        Tentang
+      </a>
+
+      <a href="#focus">
+        Fokus
+      </a>
+
+      <a href="#agenda">
+        Rangkaian
+      </a>
+
+      <a
+        href="#register"
+        class="nav-cta"
+      >
+        Daftar Sekarang
+      </a>
+
     </div>
+
   </nav>
 
-  <!-- HERO -->
+
+  <!-- =========================================================
+       HERO
+  ========================================================= -->
+
   <main id="home">
+
     <section class="hero">
+
       <div class="hero-content reveal">
-        <span class="eyebrow">Industrial Career Workshop 2026</span>
-        <h1>Step Into Your <span>Future Career.</span></h1>
+
+        <span class="eyebrow">
+          Industrial Career Workshop 2026
+        </span>
+
+        <h1>
+          Step Into Your
+          <span>Future Career.</span>
+        </h1>
+
         <p class="hero-sub">
-          Wadah untuk memperluas wawasan, membangun kompetensi, dan mempersiapkan
-          langkah menuju dunia kerja di tengah perkembangan industri yang semakin
+
+          Wadah untuk memperluas wawasan,
+          membangun kompetensi, dan mempersiapkan
+          langkah menuju dunia kerja di tengah
+          perkembangan industri yang semakin
           smart, digital, dan efisien.
+
         </p>
 
         <div class="hero-actions">
-          <a href="#register" class="btn btn-primary">Daftar Sekarang ↗</a>
-          <a href="#about" class="btn btn-secondary">Kenali ICW ↓</a>
+
+          <a
+            href="#register"
+            class="btn btn-primary"
+          >
+            Daftar Sekarang ↗
+          </a>
+
+          <a
+            href="#about"
+            class="btn btn-secondary"
+          >
+            Kenali ICW ↓
+          </a>
+
         </div>
+
       </div>
 
-      <div class="hero-card reveal">
-        <div class="logo-card">
-           <img src="logo.png">
-            </div>
+
+      <!-- LOGO LANGSUNG TANPA CARD -->
+
+      <div class="hero-logo reveal">
+
+        <img
+          src="logo.png"
+          alt="Logo Industrial Career Workshop 2026"
+        >
+
       </div>
+
 
       <div class="scroll-note">
-        <span>Scroll to explore</span>
+
+        <span>
+          Scroll to explore
+        </span>
+
         <span class="scroll-line"></span>
+
       </div>
+
     </section>
 
-    <!-- EVENT INFO -->
+
+    <!-- =====================================================
+         EVENT INFO
+    ====================================================== -->
+
     <div class="info-strip reveal">
+
       <div class="info-item">
-        <div class="info-label">Tanggal</div>
-        <div class="info-value">18 Oktober 2026</div>
+
+        <div class="info-label">
+          Tanggal
+        </div>
+
+        <div class="info-value">
+          18 Oktober 2026
+        </div>
+
       </div>
+
+
       <div class="info-item">
-        <div class="info-label">Lokasi</div>
-        <div class="info-value">Ruang Seminar Fakultas Pertanian, UPNVY</div>
+
+        <div class="info-label">
+          Lokasi
+        </div>
+
+        <div class="info-value">
+          Ruang Seminar Fakultas Pertanian, UPNVY
+        </div>
+
       </div>
+
+
       <div class="info-item">
-        <div class="info-label">Penyelenggara</div>
-        <div class="info-value">HMTI UPN “Veteran” Yogyakarta</div>
+
+        <div class="info-label">
+          Penyelenggara
+        </div>
+
+        <div class="info-value">
+          HMTI UPN “Veteran” Yogyakarta
+        </div>
+
       </div>
+
     </div>
 
-    <!-- ABOUT -->
+
+    <!-- =====================================================
+         ABOUT
+    ====================================================== -->
+
     <section id="about">
+
       <div class="about-layout">
+
         <div class="reveal">
-          <span class="eyebrow">01 — Pendahuluan</span>
-          <h2>Kenapa<br>ICW hadir?</h2>
+
+          <span class="eyebrow">
+            01 — Pendahuluan
+          </span>
+
+          <h2>
+            Kenapa<br>
+            ICW hadir?
+          </h2>
+
           <p class="section-intro">
-            Menghubungkan dunia akademik dengan realitas profesional melalui
+
+            Menghubungkan dunia akademik
+            dengan realitas profesional melalui
             wawasan, pengalaman, dan perspektif industri.
+
           </p>
+
         </div>
+
 
         <div class="about-copy reveal">
-          <p>
-            Perkembangan dunia industri yang semakin pesat melalui kemajuan teknologi,
-            digitalisasi, dan transformasi menuju industri yang cerdas dan efisien
-            menuntut sumber daya manusia yang adaptif, inovatif, serta memiliki
-            kompetensi yang sesuai dengan kebutuhan dunia kerja. Mahasiswa tidak hanya
-            perlu menguasai kemampuan akademik, tetapi juga keterampilan pendukung
-            seperti komunikasi, kepemimpinan, pemecahan masalah, dan kemampuan
-            beradaptasi.
-          </p>
 
           <p>
-            Sebagai bentuk kontribusi dalam mempersiapkan mahasiswa menghadapi dunia
-            profesional, Himpunan Mahasiswa Teknik Industri UPN “Veteran” Yogyakarta
-            menyelenggarakan <em>Industrial Career Workshop</em> sebagai wadah
-            pengembangan wawasan karier, kompetensi, dan kesiapan kerja. Kegiatan ini
-            mempertemukan peserta dengan praktisi dan pelaku industri untuk memperoleh
-            wawasan mengenai perkembangan industri, strategi pengembangan diri, serta
-            peluang karier.
+
+            Perkembangan dunia industri yang semakin pesat
+            melalui kemajuan teknologi, digitalisasi, dan
+            transformasi menuju industri yang cerdas dan efisien
+            menuntut sumber daya manusia yang adaptif, inovatif,
+            serta memiliki kompetensi yang sesuai dengan kebutuhan
+            dunia kerja. Mahasiswa tidak hanya perlu menguasai
+            kemampuan akademik, tetapi juga keterampilan pendukung
+            seperti komunikasi, kepemimpinan, pemecahan masalah,
+            dan kemampuan beradaptasi.
+
           </p>
 
-          <p>
-            Mengusung tema <em>“Step Into Your Future Career in a Smart and Efficient
-            Industry”</em>, kegiatan dikemas dalam bentuk seminar dan <em>job fair</em>
-            yang membahas tren industri modern, pengembangan kompetensi, strategi
-            membangun karier, serta peluang kerja. Kegiatan ini sekaligus menjadi bagian
-            dari rangkaian perayaan Dies Natalis Teknik Industri UPN “Veteran”
-            Yogyakarta ke-31.
-          </p>
 
           <p>
-            Melalui kegiatan ini, diharapkan peserta mampu meningkatkan wawasan,
-            kompetensi, dan kesiapan menghadapi dunia kerja, serta terbangun sinergi
-            yang lebih erat antara dunia akademik dan industri dalam menciptakan sumber
-            daya manusia yang unggul dan berdaya saing.
+
+            Sebagai bentuk kontribusi dalam mempersiapkan mahasiswa
+            menghadapi dunia profesional, Himpunan Mahasiswa Teknik
+            Industri UPN “Veteran” Yogyakarta menyelenggarakan
+            <em>Industrial Career Workshop</em> sebagai wadah
+            pengembangan wawasan karier, kompetensi, dan kesiapan kerja.
+            Kegiatan ini mempertemukan peserta dengan praktisi dan
+            pelaku industri untuk memperoleh wawasan mengenai
+            perkembangan industri, strategi pengembangan diri,
+            serta peluang karier.
+
           </p>
+
+
+          <p>
+
+            Mengusung tema
+            <em>
+              “Step Into Your Future Career in a Smart and Efficient Industry”
+            </em>,
+            kegiatan dikemas dalam bentuk seminar dan
+            <em>job fair</em> yang membahas tren industri modern,
+            pengembangan kompetensi, strategi membangun karier,
+            serta peluang kerja. Kegiatan ini sekaligus menjadi
+            bagian dari rangkaian perayaan Dies Natalis Teknik Industri
+            UPN “Veteran” Yogyakarta ke-31.
+
+          </p>
+
+
+          <p>
+
+            Melalui kegiatan ini, diharapkan peserta mampu meningkatkan
+            wawasan, kompetensi, dan kesiapan menghadapi dunia kerja,
+            serta terbangun sinergi yang lebih erat antara dunia akademik
+            dan industri dalam menciptakan sumber daya manusia yang unggul
+            dan berdaya saing.
+
+          </p>
+
 
           <div class="quote">
+
             “Your future career starts with the steps you take today.”
+
           </div>
+
         </div>
+
       </div>
+
     </section>
 
-    <!-- FOCUS -->
+
+    <!-- =====================================================
+         FOCUS
+    ====================================================== -->
+
     <section id="focus">
+
       <div class="reveal">
-        <span class="eyebrow">02 — What You’ll Explore</span>
-        <h2>Lebih dari sekadar<br>seminar.</h2>
+
+        <span class="eyebrow">
+          02 — What You’ll Explore
+        </span>
+
+        <h2>
+          Lebih dari sekadar<br>
+          seminar.
+        </h2>
+
         <p class="section-intro">
-          ICW dirancang untuk memberikan gambaran yang lebih dekat mengenai dunia
-          profesional sekaligus membantu peserta mengenali kompetensi yang perlu
-          dipersiapkan.
+
+          ICW dirancang untuk memberikan gambaran
+          yang lebih dekat mengenai dunia profesional
+          sekaligus membantu peserta mengenali kompetensi
+          yang perlu dipersiapkan.
+
         </p>
+
       </div>
+
 
       <div class="glass-grid">
-        <article class="glass-card reveal">
-          <div class="card-icon">◈</div>
-          <h3>Future Industry</h3>
-          <p>
-            Memahami perkembangan industri modern, digitalisasi, teknologi, dan
-            perubahan kebutuhan tenaga kerja di era industri yang semakin cerdas.
-          </p>
-        </article>
 
         <article class="glass-card reveal">
-          <div class="card-icon">↗</div>
-          <h3>Career Readiness</h3>
+
+          <div class="card-icon">
+            ◈
+          </div>
+
+          <h3>
+            Future Industry
+          </h3>
+
           <p>
-            Mengenali kompetensi, pengalaman, dan pola pikir yang perlu dibangun untuk
-            menghadapi proses transisi dari lingkungan akademik menuju dunia kerja.
+
+            Memahami perkembangan industri modern,
+            digitalisasi, teknologi, dan perubahan
+            kebutuhan tenaga kerja di era industri
+            yang semakin cerdas.
+
           </p>
+
         </article>
 
+
         <article class="glass-card reveal">
-          <div class="card-icon">◎</div>
-          <h3>Industry Insight</h3>
+
+          <div class="card-icon">
+            ↗
+          </div>
+
+          <h3>
+            Career Readiness
+          </h3>
+
           <p>
-            Mendapatkan perspektif praktisi mengenai ekspektasi perusahaan, tantangan
-            profesional, serta peluang yang dapat dimanfaatkan oleh mahasiswa dan
-            fresh graduate.
+
+            Mengenali kompetensi, pengalaman, dan
+            pola pikir yang perlu dibangun untuk
+            menghadapi proses transisi dari lingkungan
+            akademik menuju dunia kerja.
+
           </p>
+
         </article>
+
+
+        <article class="glass-card reveal">
+
+          <div class="card-icon">
+            ◎
+          </div>
+
+          <h3>
+            Industry Insight
+          </h3>
+
+          <p>
+
+            Mendapatkan perspektif praktisi mengenai
+            ekspektasi perusahaan, tantangan profesional,
+            serta peluang yang dapat dimanfaatkan oleh
+            mahasiswa dan fresh graduate.
+
+          </p>
+
+        </article>
+
       </div>
+
     </section>
 
-    <!-- WHO SHOULD JOIN -->
+
+    <!-- =====================================================
+         WHO SHOULD JOIN
+    ====================================================== -->
+
     <section>
+
       <div class="reveal">
-        <span class="eyebrow">03 — For You</span>
-        <h2>Siapa yang<br>perlu datang?</h2>
+
+        <span class="eyebrow">
+          03 — For You
+        </span>
+
+        <h2>
+          Siapa yang<br>
+          perlu datang?
+        </h2>
+
       </div>
+
 
       <div class="glass-grid">
-        <article class="glass-card reveal">
-          <div class="card-icon">01</div>
-          <h3>Mahasiswa</h3>
-          <p>
-            Untuk kamu yang ingin memahami dunia kerja lebih awal dan mulai
-            mempersiapkan kompetensi sejak masa perkuliahan.
-          </p>
-        </article>
 
         <article class="glass-card reveal">
-          <div class="card-icon">02</div>
-          <h3>Fresh Graduate</h3>
+
+          <div class="card-icon">
+            01
+          </div>
+
+          <h3>
+            Mahasiswa
+          </h3>
+
           <p>
-            Untuk kamu yang sedang memasuki fase awal karier dan ingin mendapatkan
-            gambaran mengenai proses serta ekspektasi dunia profesional.
+
+            Untuk kamu yang ingin memahami dunia
+            kerja lebih awal dan mulai mempersiapkan
+            kompetensi sejak masa perkuliahan.
+
           </p>
+
         </article>
 
+
         <article class="glass-card reveal">
-          <div class="card-icon">03</div>
-          <h3>Career Explorer</h3>
+
+          <div class="card-icon">
+            02
+          </div>
+
+          <h3>
+            Fresh Graduate
+          </h3>
+
           <p>
-            Untuk siapa pun yang ingin memperluas koneksi, mengenal industri, dan
-            mengeksplorasi peluang karier yang relevan.
+
+            Untuk kamu yang sedang memasuki fase awal
+            karier dan ingin mendapatkan gambaran mengenai
+            proses serta ekspektasi dunia profesional.
+
           </p>
+
         </article>
+
+
+        <article class="glass-card reveal">
+
+          <div class="card-icon">
+            03
+          </div>
+
+          <h3>
+            Career Explorer
+          </h3>
+
+          <p>
+
+            Untuk siapa pun yang ingin memperluas koneksi,
+            mengenal industri, dan mengeksplorasi peluang
+            karier yang relevan.
+
+          </p>
+
+        </article>
+
       </div>
+
     </section>
 
-    <!-- AGENDA -->
+
+    <!-- =====================================================
+         AGENDA
+    ====================================================== -->
+
     <section id="agenda">
+
       <div class="reveal">
-        <span class="eyebrow">04 — The Experience</span>
-        <h2>One event.<br>Multiple steps.</h2>
+
+        <span class="eyebrow">
+          04 — The Experience
+        </span>
+
+        <h2>
+          One event.<br>
+          Multiple steps.
+        </h2>
+
         <p class="section-intro">
-          Dari mendapatkan insight hingga menemukan peluang, setiap bagian dirancang
-          untuk menjadi langkah kecil menuju kesiapan karier.
+
+          Dari mendapatkan insight hingga menemukan peluang,
+          setiap bagian dirancang untuk menjadi langkah kecil
+          menuju kesiapan karier.
+
         </p>
+
       </div>
+
 
       <div class="timeline">
-        <div class="timeline-item reveal">
-          <span class="timeline-dot"></span>
-          <small>Step 01 — Insight</small>
-          <h3>Seminar</h3>
-          <p>
-            Dengarkan perspektif praktisi dan pelaku industri mengenai tren dunia
-            kerja, perkembangan industri, serta kompetensi yang dibutuhkan.
-          </p>
-        </div>
 
         <div class="timeline-item reveal">
+
           <span class="timeline-dot"></span>
-          <small>Step 02 — Develop</small>
-          <h3>Workshop</h3>
+
+          <small>
+            Step 01 — Insight
+          </small>
+
+          <h3>
+            Seminar
+          </h3>
+
           <p>
-            Mengembangkan pemahaman dan kemampuan praktis yang dapat membantu peserta
-            menghadapi tantangan dan proses menuju dunia profesional.
+
+            Dengarkan perspektif praktisi dan pelaku industri
+            mengenai tren dunia kerja, perkembangan industri,
+            serta kompetensi yang dibutuhkan.
+
           </p>
+
         </div>
+
+
+        <div class="timeline-item reveal">
+
+          <span class="timeline-dot"></span>
+
+          <small>
+            Step 02 — Develop
+          </small>
+
+          <h3>
+            Workshop
+          </h3>
+
+          <p>
+
+            Mengembangkan pemahaman dan kemampuan praktis
+            yang dapat membantu peserta menghadapi tantangan
+            dan proses menuju dunia profesional.
+
+          </p>
+
+        </div>
+
       </div>
+
     </section>
 
-    <!-- CTA / POSTER -->
-    <section id="register" class="poster-section">
+
+    <!-- =====================================================
+         CTA / POSTER
+    ====================================================== -->
+
+    <section
+      id="register"
+      class="poster-section"
+    >
+
       <div class="reveal">
-        <span class="eyebrow">05 — Take The Step</span>
-        <h2>Ready to step<br>into your future?</h2>
-        <p class="section-intro" style="margin:auto;">
-          Slot poster di bawah dapat diganti dengan poster resmi ICW 2026.
-          Tambahkan deskripsi acara dan arahkan peserta langsung ke halaman pendaftaran.
+
+        <span class="eyebrow">
+          05 — Take The Step
+        </span>
+
+        <h2>
+          Ready to step<br>
+          into your future?
+        </h2>
+
+        <p
+          class="section-intro"
+          style="margin:auto;"
+        >
+
+          Slot poster di bawah dapat diganti dengan
+          poster resmi ICW 2026. Tambahkan deskripsi
+          acara dan arahkan peserta langsung ke
+          halaman pendaftaran.
+
         </p>
+
       </div>
 
+
       <div class="poster-box reveal">
+
+
+        <!-- POSTER -->
+
         <div class="poster-placeholder">
-          <!--
-            CARA MEMASANG POSTER:
-            1. Ganti src pada tag img di bawah dengan nama file poster, misalnya:
-               src="poster-icw-2026.jpg"
-            2. Hapus style="display:none" agar poster muncul.
-          -->
+
           <div class="placeholder-content">
-            <strong>POSTER ICW 2026</strong>
-            <span>Tempat poster acara akan ditampilkan</span>
+
+            <strong>
+              POSTER ICW 2026
+            </strong>
+
+            <span>
+              Tempat poster acara akan ditampilkan
+            </span>
+
           </div>
-          <img src="" alt="Poster Industrial Career Workshop 2026" id="posterImage">
+
+
+          <img
+            src=""
+            alt="Poster Industrial Career Workshop 2026"
+            id="posterImage"
+          >
+
         </div>
 
+
+        <!-- POSTER COPY -->
+
         <div class="poster-copy">
-          <span class="eyebrow">Registration</span>
-          <h3>Jangan hanya<br>menunggu masa depan.</h3>
+
+          <span class="eyebrow">
+            Registration
+          </span>
+
+          <h3>
+
+            Jangan hanya<br>
+            menunggu masa depan.
+
+          </h3>
+
+
           <p>
-            Jadikan ICW sebagai salah satu langkah untuk mengenal industri, memperluas
-            perspektif, membangun koneksi, dan mempersiapkan diri menghadapi dunia kerja.
+
+            Jadikan ICW sebagai salah satu langkah
+            untuk mengenal industri, memperluas perspektif,
+            membangun koneksi, dan mempersiapkan diri
+            menghadapi dunia kerja.
+
           </p>
 
+
           <div class="event-points">
-            <div class="event-point"><span>→</span> Seminar &amp; Workshop</div>
-            <div class="event-point"><span>→</span> Insight dari praktisi industri</div>
-            <div class="event-point"><span>→</span> Networking &amp; career opportunity</div>
-            <div class="event-point"><span>→</span> Terbuka untuk mahasiswa, alumni, fresh graduate, dan umum</div>
+
+            <div class="event-point">
+
+              <span>→</span>
+
+              Seminar &amp; Workshop
+
+            </div>
+
+
+            <div class="event-point">
+
+              <span>→</span>
+
+              Insight dari praktisi industri
+
+            </div>
+
+
+            <div class="event-point">
+
+              <span>→</span>
+
+              Networking &amp; career opportunity
+
+            </div>
+
+
+            <div class="event-point">
+
+              <span>→</span>
+
+              Terbuka untuk mahasiswa, alumni,
+              fresh graduate, dan umum
+
+            </div>
+
           </div>
 
-          <!-- GANTI LINK DI BAWAH DENGAN LINK GOOGLE FORM / PENDAFTARAN -->
+
+          <!-- LINK PENDAFTARAN -->
+
           <a
             class="registration-link"
             href="https://forms.gle/eWfu6cjvmWWVRnqH6"
             target="_blank"
             rel="noopener noreferrer"
           >
+
             DAFTAR SEKARANG ↗
+
           </a>
+
         </div>
+
       </div>
+
     </section>
+
   </main>
 
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================= -->
+
   <footer>
+
     <div class="footer-brand">
-       <img src="logo.png">
-     <span>Industrial Career Workshop 2026</span>
+
+      <img
+        src="logo.png"
+        alt="Logo ICW 2026"
+      >
+
+      <span>
+        Industrial Career Workshop 2026
+      </span>
+
     </div>
-    <div>HMTI UPN “Veteran” Yogyakarta · Dies Natalis Teknik Industri ke-31</div>
+
+
+    <div>
+
+      HMTI UPN “Veteran” Yogyakarta
+      · Dies Natalis Teknik Industri ke-31
+
+    </div>
+
   </footer>
 
+
+  <!-- =========================================================
+       JAVASCRIPT
+  ========================================================= -->
+
   <script>
-    // Reveal animation saat elemen masuk viewport
-    const revealItems = document.querySelectorAll(".reveal");
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          observer.unobserve(entry.target);
+    /* ---------------------------------------------------------
+       REVEAL ANIMATION
+    --------------------------------------------------------- */
+
+    const revealItems =
+      document.querySelectorAll(".reveal");
+
+
+    const observer =
+      new IntersectionObserver(
+
+        (entries) => {
+
+          entries.forEach((entry) => {
+
+            if (entry.isIntersecting) {
+
+              entry.target.classList.add(
+                "visible"
+              );
+
+              observer.unobserve(
+                entry.target
+              );
+
+            }
+
+          });
+
+        },
+
+        {
+          threshold: 0.12
         }
-      });
-    }, { threshold: 0.12 });
 
-    revealItems.forEach((item, index) => {
-      item.style.transitionDelay = `${Math.min(index * 35, 220)}ms`;
-      observer.observe(item);
-    });
+      );
 
-    // Efek parallax ringan pada background saat scroll
-    window.addEventListener("scroll", () => {
-      const scrollY = window.scrollY;
-      document.querySelector(".orb.one").style.transform =
-        `translate(${scrollY * 0.015}px, ${scrollY * -0.025}px)`;
-      document.querySelector(".orb.two").style.transform =
-        `translate(${scrollY * -0.012}px, ${scrollY * 0.018}px)`;
-    });
 
-    /*
-      OPSIONAL:
-      Setelah poster resmi tersedia, ubah:
-      const posterImage = document.getElementById("posterImage");
-      posterImage.src = "poster-icw-2026.jpg";
-      posterImage.style.display = "block";
-      document.querySelector(".placeholder-content").style.display = "none";
-    */
+    revealItems.forEach(
+      (item, index) => {
+
+        item.style.transitionDelay =
+          `${Math.min(index * 35, 220)}ms`;
+
+        observer.observe(item);
+
+      }
+    );
+
+
+    /* ---------------------------------------------------------
+       PARALLAX BACKGROUND
+    --------------------------------------------------------- */
+
+    window.addEventListener(
+      "scroll",
+      () => {
+
+        const scrollY =
+          window.scrollY;
+
+
+        document.querySelector(
+          ".orb.one"
+        ).style.transform =
+          `translate(
+            ${scrollY * 0.015}px,
+            ${scrollY * -0.025}px
+          )`;
+
+
+        document.querySelector(
+          ".orb.two"
+        ).style.transform =
+          `translate(
+            ${scrollY * -0.012}px,
+            ${scrollY * 0.018}px
+          )`;
+
+      }
+    );
+
+
+    /* ---------------------------------------------------------
+       POSTER
+       
+       Jika poster sudah tersedia, ubah menjadi:
+
+       const posterImage =
+         document.getElementById("posterImage");
+
+       posterImage.src =
+         "poster-icw-2026.jpg";
+
+       posterImage.style.display =
+         "block";
+
+       document.querySelector(
+         ".placeholder-content"
+       ).style.display =
+         "none";
+    --------------------------------------------------------- */
+
   </script>
+
 </body>
 </html>
