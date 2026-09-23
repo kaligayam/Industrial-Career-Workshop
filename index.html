@@ -492,7 +492,7 @@
       pointer-events: none;
     }
 
-   .hero-logo img {
+ .hero-logo img {
   position: relative;
 
   width: min(430px, 85%);
@@ -502,53 +502,42 @@
 
   filter:
     drop-shadow(0 25px 45px rgba(0,0,0,.35))
-    drop-shadow(0 0 35px rgba(143,232,255,.20));
+    drop-shadow(0 0 35px rgba(143,232,255,.18));
 
-  animation: logoFloat 2.8s ease-in-out infinite;
-
+  animation: logoFloat 4.5s ease-in-out infinite;
   will-change: transform, filter;
 }
 
 @keyframes logoFloat {
-
   0% {
-    transform:
-      translate3d(0, 0, 0)
-      rotate(0deg)
-      scale(1);
+    transform: translate3d(0, 0, 0) rotate(0deg);
+    filter:
+      drop-shadow(0 20px 35px rgba(0,0,0,.30))
+      drop-shadow(0 0 25px rgba(143,232,255,.12));
   }
 
-  20% {
-    transform:
-      translate3d(12px, -30px, 0)
-      rotate(2deg)
-      scale(1.015);
+  25% {
+    transform: translate3d(8px, -18px, 0) rotate(1.5deg);
   }
 
   50% {
-    transform:
-      translate3d(0, -70px, 0)
-      rotate(0deg)
-      scale(1.04);
-
+    transform: translate3d(0, -35px, 0) rotate(0deg);
     filter:
-      drop-shadow(0 45px 55px rgba(0,0,0,.20))
-      drop-shadow(0 0 65px rgba(143,232,255,.35));
+      drop-shadow(0 35px 50px rgba(0,0,0,.25))
+      drop-shadow(0 0 50px rgba(143,232,255,.28));
   }
 
-  80% {
-    transform:
-      translate3d(-12px, -30px, 0)
-      rotate(-2deg)
-      scale(1.015);
+  75% {
+    transform: translate3d(-8px, -18px, 0) rotate(-1.5deg);
   }
 
   100% {
-    transform:
-      translate3d(0, 0, 0)
-      rotate(0deg)
-      scale(1);
+    transform: translate3d(0, 0, 0) rotate(0deg);
+    filter:
+      drop-shadow(0 20px 35px rgba(0,0,0,.30))
+      drop-shadow(0 0 25px rgba(143,232,255,.12));
   }
+}
 
 }
     .scroll-note {
