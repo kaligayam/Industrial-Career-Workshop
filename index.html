@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Industrial Career Workshop 2026</title>
+  <title>ICW — Industrial Career Workshop | Gemini Certified Educators</title>
 
   <meta
     name="description"
-    content="Industrial Career Workshop 2026 — Step Into Your Future Career in a Smart and Efficient Industry"
+    content="Industrial Career Workshop (ICW) — Program Pelatihan dan Sertifikasi Gemini Certified Educators untuk Mahasiswa dan Staf Institusi Perguruan Tinggi. Minggu, 18 Oktober 2026, Ruang Seminar Fakultas Pertanian UPN Veteran Yogyakarta."
   >
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -492,7 +492,7 @@
       pointer-events: none;
     }
 
- .hero-logo img {
+   .hero-logo img {
   position: relative;
 
   width: min(430px, 85%);
@@ -502,44 +502,66 @@
 
   filter:
     drop-shadow(0 25px 45px rgba(0,0,0,.35))
-    drop-shadow(0 0 35px rgba(143,232,255,.18));
+    drop-shadow(0 0 35px rgba(143,232,255,.20));
 
-  animation: logoFloat 4.5s ease-in-out infinite;
+  animation: logoFloat 2.8s ease-in-out infinite;
+
   will-change: transform, filter;
 }
 
 @keyframes logoFloat {
+
   0% {
-    transform: translate3d(0, 0, 0) rotate(0deg);
-    filter:
-      drop-shadow(0 20px 35px rgba(0,0,0,.30))
-      drop-shadow(0 0 25px rgba(143,232,255,.12));
+    transform:
+      translate3d(0, 0, 0)
+      rotate(0deg)
+      scale(1);
   }
 
-  25% {
-    transform: translate3d(8px, -18px, 0) rotate(1.5deg);
+  20% {
+    transform:
+      translate3d(12px, -30px, 0)
+      rotate(2deg)
+      scale(1.015);
   }
 
   50% {
-    transform: translate3d(0, -35px, 0) rotate(0deg);
+    transform:
+      translate3d(0, -70px, 0)
+      rotate(0deg)
+      scale(1.04);
+
     filter:
-      drop-shadow(0 35px 50px rgba(0,0,0,.25))
-      drop-shadow(0 0 50px rgba(143,232,255,.28));
+      drop-shadow(0 45px 55px rgba(0,0,0,.20))
+      drop-shadow(0 0 65px rgba(143,232,255,.35));
   }
 
-  75% {
-    transform: translate3d(-8px, -18px, 0) rotate(-1.5deg);
+  80% {
+    transform:
+      translate3d(-12px, -30px, 0)
+      rotate(-2deg)
+      scale(1.015);
   }
 
   100% {
-    transform: translate3d(0, 0, 0) rotate(0deg);
-    filter:
-      drop-shadow(0 20px 35px rgba(0,0,0,.30))
-      drop-shadow(0 0 25px rgba(143,232,255,.12));
+    transform:
+      translate3d(0, 0, 0)
+      rotate(0deg)
+      scale(1);
   }
-}
 
 }
+
+    @keyframes logoFloat {
+      0%, 100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-14px);
+      }
+    }
+
     .scroll-note {
       position: absolute;
 
@@ -604,7 +626,7 @@
       display: grid;
 
       grid-template-columns:
-        repeat(3, 1fr);
+        repeat(4, 1fr);
 
       border:
         1px solid var(--border);
@@ -1167,7 +1189,11 @@
       }
 
       .info-strip {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .info-item:nth-child(2) {
+        border-right: 0;
       }
 
       .info-item {
@@ -1199,6 +1225,10 @@
 
       footer {
         flex-direction: column;
+      }
+
+      footer > div:last-child {
+        text-align: left !important;
       }
     }
 
@@ -1268,12 +1298,16 @@
         Tentang
       </a>
 
+      <a href="#partners">
+        Teaching Partners
+      </a>
+
       <a href="#focus">
         Fokus
       </a>
 
       <a href="#agenda">
-        Rangkaian
+        Sesi
       </a>
 
       <a
@@ -1299,7 +1333,7 @@
       <div class="hero-content reveal">
 
         <span class="eyebrow">
-          Industrial Career Workshop 2026
+          Industrial Career Workshop SPECIAL DIESNATALIS TI
         </span>
 
         <h1>
@@ -1309,11 +1343,10 @@
 
         <p class="hero-sub">
 
-          Wadah untuk memperluas wawasan,
-          membangun kompetensi, dan mempersiapkan
-          langkah menuju dunia kerja di tengah
-          perkembangan industri yang semakin
-          smart, digital, dan efisien.
+          Program pelatihan dan sertifikasi
+          <strong>Gemini Certified Educators</strong>
+          <SPAN>untuk mahasiswa dan staf institusi perguruan
+          tinggi</SPAN>
 
         </p>
 
@@ -1376,7 +1409,20 @@
         </div>
 
         <div class="info-value">
-          18 Oktober 2026
+          Minggu, 18 Oktober 2026
+        </div>
+
+      </div>
+
+
+      <div class="info-item">
+
+        <div class="info-label">
+          Sesi 1 &amp; Sesi 2
+        </div>
+
+        <div class="info-value">
+          08.00 WIB &amp; 13.00 WIB
         </div>
 
       </div>
@@ -1389,7 +1435,7 @@
         </div>
 
         <div class="info-value">
-          Ruang Seminar Fakultas Pertanian, UPNVY
+          Ruang Seminar Fakultas Pertanian, UPN “Veteran” Yogyakarta
         </div>
 
       </div>
@@ -1398,11 +1444,11 @@
       <div class="info-item">
 
         <div class="info-label">
-          Penyelenggara
+          HTM
         </div>
 
         <div class="info-value">
-          HMTI UPN “Veteran” Yogyakarta
+          Gratis untuk Umum
         </div>
 
       </div>
@@ -1431,9 +1477,10 @@
 
           <p class="section-intro">
 
-            Menghubungkan dunia akademik
-            dengan realitas profesional melalui
-            wawasan, pengalaman, dan perspektif industri.
+            Menghadirkan pelatihan dan sertifikasi resmi
+            Google Gemini bagi mahasiswa dan staf perguruan
+            tinggi, sebagai bekal keterampilan AI yang relevan
+            dengan dunia kerja masa kini.
 
           </p>
 
@@ -1444,57 +1491,59 @@
 
           <p>
 
-            Perkembangan dunia industri yang semakin pesat
-            melalui kemajuan teknologi, digitalisasi, dan
-            transformasi menuju industri yang cerdas dan efisien
-            menuntut sumber daya manusia yang adaptif, inovatif,
-            serta memiliki kompetensi yang sesuai dengan kebutuhan
-            dunia kerja. Mahasiswa tidak hanya perlu menguasai
-            kemampuan akademik, tetapi juga keterampilan pendukung
-            seperti komunikasi, kepemimpinan, pemecahan masalah,
-            dan kemampuan beradaptasi.
+            Perkembangan teknologi kecerdasan buatan yang
+            semakin pesat menuntut mahasiswa dan tenaga
+            pendidik untuk tidak hanya memahami, tetapi juga
+            mampu memanfaatkan perangkat AI secara produktif
+            dan bertanggung jawab. Kemampuan menggunakan
+            <em>tools</em> AI seperti Gemini dan NotebookLM
+            kini menjadi kompetensi tambahan yang penting
+            untuk menunjang produktivitas akademik maupun
+            profesional.
 
           </p>
 
 
           <p>
 
-            Sebagai bentuk kontribusi dalam mempersiapkan mahasiswa
-            menghadapi dunia profesional, Himpunan Mahasiswa Teknik
+            Sebagai bentuk kontribusi dalam mempersiapkan
+            sumber daya manusia yang adaptif terhadap
+            perkembangan teknologi, Himpunan Mahasiswa Teknik
             Industri UPN “Veteran” Yogyakarta menyelenggarakan
-            <em>Industrial Career Workshop</em> sebagai wadah
-            pengembangan wawasan karier, kompetensi, dan kesiapan kerja.
-            Kegiatan ini mempertemukan peserta dengan praktisi dan
-            pelaku industri untuk memperoleh wawasan mengenai
-            perkembangan industri, strategi pengembangan diri,
-            serta peluang karier.
+            <em>Industrial Career Workshop</em> (ICW) — sebuah
+            program pelatihan dan sertifikasi
+            <strong>Gemini Certified Educators</strong> yang
+            diselenggarakan bekerja sama dengan Google
+            (Gemini &amp; NotebookLM) dan
+            <strong>Paideia Educational Solutions</strong>,
+            PD Google Partner.
 
           </p>
 
 
           <p>
 
-            Mengusung tema
-            <em>
-              “Step Into Your Future Career in a Smart and Efficient Industry”
-            </em>,
-            kegiatan dikemas dalam bentuk seminar dan
-            <em>job fair</em> yang membahas tren industri modern,
-            pengembangan kompetensi, strategi membangun karier,
-            serta peluang kerja. Kegiatan ini sekaligus menjadi
-            bagian dari rangkaian perayaan Dies Natalis Teknik Industri
-            UPN “Veteran” Yogyakarta ke-31.
+            Terbuka untuk mahasiswa dan staf dari institusi
+            perguruan tinggi, kegiatan ini dikemas dalam dua
+            sesi pelatihan pada
+            <em>Minggu, 18 Oktober 2026</em> — pukul 08.00 WIB
+            dan 13.00 WIB, bertempat di Ruang Seminar Fakultas
+            Pertanian, UPN “Veteran” Yogyakarta. Kegiatan ini
+            sekaligus menjadi bagian dari rangkaian perayaan
+            Dies Natalis Teknik Industri UPN “Veteran” Yogyakarta
+            ke-31.
 
           </p>
 
 
           <p>
 
-            Melalui kegiatan ini, diharapkan peserta mampu meningkatkan
-            wawasan, kompetensi, dan kesiapan menghadapi dunia kerja,
-            serta terbangun sinergi yang lebih erat antara dunia akademik
-            dan industri dalam menciptakan sumber daya manusia yang unggul
-            dan berdaya saing.
+            Peserta yang mengikuti pelatihan ini akan
+            mendapatkan sertifikasi resmi dari Google, modul
+            pembelajaran yang relevan, dukungan logistik,
+            sertifikat keikutsertaan, serta berbagai
+            <em>prizes</em> menarik — seluruhnya
+            <strong>gratis tanpa biaya pendaftaran (Free HTM)</strong>.
 
           </p>
 
@@ -1506,6 +1555,104 @@
           </div>
 
         </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         TEACHING PARTNERS
+    ====================================================== -->
+
+    <section id="partners">
+
+      <div class="reveal">
+
+        <span class="eyebrow">
+          Teaching Partners
+        </span>
+
+        <h2>
+          Belajar langsung<br>
+          dari Google.
+        </h2>
+
+        <p class="section-intro">
+
+          ICW menghadirkan materi dan sertifikasi resmi
+          yang disusun bersama Google dan mitra resmi
+          Google Partner.
+
+        </p>
+
+      </div>
+
+
+      <div class="glass-grid">
+
+        <article class="glass-card reveal">
+
+          <div class="card-icon">
+            G
+          </div>
+
+          <h3>
+            Google
+          </h3>
+
+          <p>
+
+            Penyelenggaraan program pelatihan dan
+            jalur sertifikasi resmi dari Google untuk
+            peserta ICW.
+
+          </p>
+
+        </article>
+
+
+        <article class="glass-card reveal">
+
+          <div class="card-icon">
+            ✦
+          </div>
+
+          <h3>
+            Gemini &amp; NotebookLM
+          </h3>
+
+          <p>
+
+            Materi inti pelatihan: memanfaatkan Gemini
+            dan NotebookLM sebagai perangkat AI untuk
+            belajar dan mengajar secara lebih efektif.
+
+          </p>
+
+        </article>
+
+
+        <article class="glass-card reveal">
+
+          <div class="card-icon">
+            ◎
+          </div>
+
+          <h3>
+            Paideia Educational Solutions
+          </h3>
+
+          <p>
+
+            PD Google Partner yang memandu proses
+            pelatihan dan sertifikasi
+            <em>Gemini Certified Educators</em> bagi
+            peserta ICW.
+
+          </p>
+
+        </article>
 
       </div>
 
@@ -1531,10 +1678,9 @@
 
         <p class="section-intro">
 
-          ICW dirancang untuk memberikan gambaran
-          yang lebih dekat mengenai dunia profesional
-          sekaligus membantu peserta mengenali kompetensi
-          yang perlu dipersiapkan.
+          ICW dirancang sebagai pelatihan praktis
+          untuk membekali peserta dengan keterampilan
+          AI yang diakui secara resmi oleh Google.
 
         </p>
 
@@ -1550,15 +1696,14 @@
           </div>
 
           <h3>
-            Future Industry
+            Free Training
           </h3>
 
           <p>
 
-            Memahami perkembangan industri modern,
-            digitalisasi, teknologi, dan perubahan
-            kebutuhan tenaga kerja di era industri
-            yang semakin cerdas.
+            Pelatihan intensif penggunaan Gemini dan
+            NotebookLM untuk kebutuhan belajar-mengajar,
+            tanpa dipungut biaya pendaftaran.
 
           </p>
 
@@ -1572,15 +1717,14 @@
           </div>
 
           <h3>
-            Career Readiness
+            Google Certification
           </h3>
 
           <p>
 
-            Mengenali kompetensi, pengalaman, dan
-            pola pikir yang perlu dibangun untuk
-            menghadapi proses transisi dari lingkungan
-            akademik menuju dunia kerja.
+            Peserta berkesempatan memperoleh sertifikasi
+            resmi <em>Gemini Certified Educators</em> dari
+            Google sebagai bukti kompetensi.
 
           </p>
 
@@ -1594,15 +1738,14 @@
           </div>
 
           <h3>
-            Industry Insight
+            Modul &amp; Prizes
           </h3>
 
           <p>
 
-            Mendapatkan perspektif praktisi mengenai
-            ekspektasi perusahaan, tantangan profesional,
-            serta peluang yang dapat dimanfaatkan oleh
-            mahasiswa dan fresh graduate.
+            Modul pelatihan yang relevan, dukungan
+            logistik, sertifikat keikutsertaan, serta
+            berbagai <em>prizes</em> menarik bagi peserta.
 
           </p>
 
@@ -1630,6 +1773,13 @@
           perlu datang?
         </h2>
 
+        <p class="section-intro">
+
+          ICW terbuka untuk mahasiswa dan staf dari
+          institusi perguruan tinggi mana pun.
+
+        </p>
+
       </div>
 
 
@@ -1647,9 +1797,9 @@
 
           <p>
 
-            Untuk kamu yang ingin memahami dunia
-            kerja lebih awal dan mulai mempersiapkan
-            kompetensi sejak masa perkuliahan.
+            Untuk kamu yang ingin menguasai perangkat AI
+            seperti Gemini dan NotebookLM sebagai bekal
+            akademik maupun karier ke depan.
 
           </p>
 
@@ -1663,14 +1813,14 @@
           </div>
 
           <h3>
-            Fresh Graduate
+            Dosen &amp; Tenaga Pendidik
           </h3>
 
           <p>
 
-            Untuk kamu yang sedang memasuki fase awal
-            karier dan ingin mendapatkan gambaran mengenai
-            proses serta ekspektasi dunia profesional.
+            Untuk pendidik yang ingin memperoleh sertifikasi
+            <em>Gemini Certified Educators</em> dan
+            mengintegrasikan AI ke dalam proses pengajaran.
 
           </p>
 
@@ -1684,14 +1834,14 @@
           </div>
 
           <h3>
-            Career Explorer
+            Staf Institusi Perguruan Tinggi
           </h3>
 
           <p>
 
-            Untuk siapa pun yang ingin memperluas koneksi,
-            mengenal industri, dan mengeksplorasi peluang
-            karier yang relevan.
+            Untuk staf kampus yang ingin meningkatkan
+            produktivitas kerja dengan memanfaatkan
+            kemampuan AI secara efektif.
 
           </p>
 
@@ -1715,15 +1865,13 @@
         </span>
 
         <h2>
-          One event.<br>
-          Multiple steps.
+      
+          Dua sesi pilihan.
         </h2>
 
         <p class="section-intro">
 
-          Dari mendapatkan insight hingga menemukan peluang,
-          setiap bagian dirancang untuk menjadi langkah kecil
-          menuju kesiapan karier.
+          Pilih sesi yang paling sesuai dengan jadwalmu 
 
         </p>
 
@@ -1737,18 +1885,18 @@
           <span class="timeline-dot"></span>
 
           <small>
-            Step 01 — Insight
+            Sesi 1 — 08.00 WIB
           </small>
 
           <h3>
-            Seminar
+            Pelatihan Pagi
           </h3>
 
           <p>
 
-            Dengarkan perspektif praktisi dan pelaku industri
-            mengenai tren dunia kerja, perkembangan industri,
-            serta kompetensi yang dibutuhkan.
+            Sesi pelatihan dan sertifikasi
+            <em>Gemini Certified Educators</em> gelombang
+            pertama, Minggu 18 Oktober 2026 pukul 08.00 WIB.
 
           </p>
 
@@ -1760,18 +1908,18 @@
           <span class="timeline-dot"></span>
 
           <small>
-            Step 02 — Develop
+            Sesi 2 — 13.00 WIB
           </small>
 
           <h3>
-            Workshop
+            Pelatihan Siang
           </h3>
 
           <p>
 
-            Mengembangkan pemahaman dan kemampuan praktis
-            yang dapat membantu peserta menghadapi tantangan
-            dan proses menuju dunia profesional.
+            Sesi pelatihan dan sertifikasi
+            <em>Gemini Certified Educators</em> gelombang
+            kedua, Minggu 18 Oktober 2026 pukul 13.00 WIB.
 
           </p>
 
@@ -1798,8 +1946,8 @@
         </span>
 
         <h2>
-          Ready to step<br>
-          into your future?
+          Ready to become<br>
+          a Gemini Certified Educator?
         </h2>
 
         <p
@@ -1807,10 +1955,9 @@
           style="margin:auto;"
         >
 
-          Slot poster di bawah dapat diganti dengan
-          poster resmi ICW 2026. Tambahkan deskripsi
-          acara dan arahkan peserta langsung ke
-          halaman pendaftaran.
+          Kuota terbatas untuk setiap sesi. Scan QR code
+          atau klik tombol di bawah untuk mendaftar —
+          gratis, tanpa biaya pendaftaran (Free HTM).
 
         </p>
 
@@ -1824,7 +1971,7 @@
 
         <div class="poster-placeholder">
 
-          <div class="placeholder-content">
+          <div class="placeholder-content" style="display:none;">
 
             <strong>
               POSTER ICW 2026
@@ -1838,9 +1985,10 @@
 
 
           <img
-            src=""
-            alt="Poster Industrial Career Workshop 2026"
+            src="poster.png"
+            alt="Poster Industrial Career Workshop — Gemini Certified Educators"
             id="posterImage"
+            style="display:block;"
           >
 
         </div>
@@ -1851,7 +1999,7 @@
         <div class="poster-copy">
 
           <span class="eyebrow">
-            Registration
+            Registration · Free HTM
           </span>
 
           <h3>
@@ -1864,10 +2012,10 @@
 
           <p>
 
-            Jadikan ICW sebagai salah satu langkah
-            untuk mengenal industri, memperluas perspektif,
-            membangun koneksi, dan mempersiapkan diri
-            menghadapi dunia kerja.
+            Jadikan ICW sebagai langkah nyata untuk
+            menguasai AI, memperoleh sertifikasi resmi
+            Google, dan mempersiapkan diri menghadapi
+            dunia kerja yang semakin cerdas dan efisien.
 
           </p>
 
@@ -1878,7 +2026,8 @@
 
               <span>→</span>
 
-              Seminar &amp; Workshop
+              Free Training bersama Google &amp; Paideia
+              Educational Solutions
 
             </div>
 
@@ -1887,7 +2036,8 @@
 
               <span>→</span>
 
-              Insight dari praktisi industri
+              Google Certification — <em>Gemini Certified
+              Educators</em>
 
             </div>
 
@@ -1896,7 +2046,7 @@
 
               <span>→</span>
 
-              Networking &amp; career opportunity
+              Modul relevan &amp; dukungan logistik
 
             </div>
 
@@ -1905,8 +2055,18 @@
 
               <span>→</span>
 
-              Terbuka untuk mahasiswa, alumni,
-              fresh graduate, dan umum
+              Sertifikat keikutsertaan &amp; <em>prizes</em>
+              menarik
+
+            </div>
+
+
+            <div class="event-point">
+
+              <span>→</span>
+
+              Terbuka untuk mahasiswa dan staf institusi
+              perguruan tinggi
 
             </div>
 
@@ -1949,16 +2109,32 @@
       >
 
       <span>
-        Industrial Career Workshop 2026
+        Industrial Career Workshop
       </span>
 
     </div>
 
 
-    <div>
+    <div style="text-align:right;">
 
-      HMTI UPN “Veteran” Yogyakarta
-      · Dies Natalis Teknik Industri ke-31
+      <div>
+        HMTI UPN “Veteran” Yogyakarta
+        · Dies Natalis Teknik Industri ke-31
+      </div>
+
+      <div style="margin-top:6px;">
+        Sponsored by Gemini, KAI, Access by KAI,
+        Pertamina Patra Niaga, Sebarno 09, Alumni TI 2008
+      </div>
+
+      <div style="margin-top:6px;">
+        Instagram:
+        <a
+          href="https://www.instagram.com/diesnatalis.ti"
+          target="_blank"
+          rel="noopener noreferrer"
+        >@diesnatalis.ti</a>
+      </div>
 
     </div>
 
@@ -2056,22 +2232,8 @@
 
     /* ---------------------------------------------------------
        POSTER
-       
-       Jika poster sudah tersedia, ubah menjadi:
-
-       const posterImage =
-         document.getElementById("posterImage");
-
-       posterImage.src =
-         "poster-icw-2026.jpg";
-
-       posterImage.style.display =
-         "block";
-
-       document.querySelector(
-         ".placeholder-content"
-       ).style.display =
-         "none";
+       Poster resmi (poster-icw-2026.png) sudah terpasang
+       langsung di markup di atas.
     --------------------------------------------------------- */
 
   </script>
